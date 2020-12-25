@@ -79,7 +79,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public Order checkout(ShoppingCart shoppingCart, String username) {
-        if(shoppingCart.getMap().isEmpty()) return null;
+        if (shoppingCart.getMap().isEmpty()) return null;
         Order order = this.saveOrder(generateOrder(shoppingCart), username);
         shoppingCart.empty();
         return order;

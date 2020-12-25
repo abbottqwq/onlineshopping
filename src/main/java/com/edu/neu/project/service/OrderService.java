@@ -41,10 +41,6 @@ public interface OrderService {
 
     List<Order> getAllOrdersByUserAccountIDOrderByDate(int accountID);
 
-    ;
-
     List<Order> getAllOrdersByUsernameOrderByDate(String userName);
-
-    ;
 
 }

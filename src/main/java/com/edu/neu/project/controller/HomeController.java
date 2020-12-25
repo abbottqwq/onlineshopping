@@ -1,6 +1,5 @@
 package com.edu.neu.project.controller;
 
-import com.edu.neu.project.authority.AuthorityEnum;
 import com.edu.neu.project.exception.UsernameAlreadyExistException;
 import com.edu.neu.project.model.UserAccountInfo;
 import com.edu.neu.project.service.ProductService;

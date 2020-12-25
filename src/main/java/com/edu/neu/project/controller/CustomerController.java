@@ -87,7 +87,7 @@ public class CustomerController {
             this.orderService.checkout(shoppingCart, principal.getName());
             mv.setViewName("redirect:/customer/showshoppingcart");
             return mv;
-        } else{
+        } else {
             mv.setViewName("redirect:/customer/showshoppingcart?checkfail=true");
             return mv;
         }

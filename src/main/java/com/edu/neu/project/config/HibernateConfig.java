@@ -25,7 +25,6 @@ public class HibernateConfig {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setConfigLocation(context.getResource("classpath:hibernate-cfg/hibernate.cfg.xml"));
         sessionFactory.setPackagesToScan("com.edu.neu.project.entity");
-
         return sessionFactory;
     }
 

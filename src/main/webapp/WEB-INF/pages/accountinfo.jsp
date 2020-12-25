@@ -69,8 +69,9 @@
                 "productmanagerusername": pmUsername
             },
             success: (res) => {
-                if (res["success"]) {alert("delete successfully")}
-                else alert(res["error"]);
+                if (res["success"]) {
+                    alert("delete successfully")
+                } else alert(res["error"]);
             }
         })
     })

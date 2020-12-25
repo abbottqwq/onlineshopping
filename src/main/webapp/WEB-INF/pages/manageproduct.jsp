@@ -86,7 +86,7 @@
 <script>
 
     <c:if test="${updatefail}">
-        alert("upload fail")
+    alert("upload fail")
     </c:if>
 
     $(document).ready(() => {

@@ -1,5 +1,3 @@
-
-
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%--
@@ -19,7 +17,7 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <title>Change Password</title>
     <style>
-        p{
+        p {
             color: red;
         }
     </style>
@@ -27,9 +25,12 @@
 <body>
 <jsp:include page="_header.jsp"/>
 <form:form action="changepassword" method="post">
-    <label>old password<input type="password" required name="oldpassword"/></label><p>${error1}</p><br>
-    <label>new password<input type="password" required name="newpassword"/></label><p>${error2}</p><br>
-    <label>confirmed password<input type="password" required name="cnewpassword"/><p>${error3}</p></label><br>
+    <label>old password<input type="password" required name="oldpassword"/></label>
+    <p>${error1}</p><br>
+    <label>new password<input type="password" required name="newpassword"/></label>
+    <p>${error2}</p><br>
+    <label>confirmed password<input type="password" required name="cnewpassword"/>
+        <p>${error3}</p></label><br>
     <input type="submit" value="submit"/>
 </form:form>
 </body>

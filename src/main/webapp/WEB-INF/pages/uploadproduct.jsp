@@ -62,13 +62,14 @@
         </tr>
         <tr>
             <td>Upload Image</td>
-            <td><input required type="file" accept="image/*" name="imgFile" multiple="multiple" id="imgFile"><form:errors
+            <td><input required type="file" accept="image/*" name="imgFile" multiple="multiple"
+                       id="imgFile"><form:errors
                     path="imgFile" cssClass="valid-error"/></td>
         </tr>
         <tr>
             <td>Description</td>
             <td><textarea id="description" rows="8" name="description"
-                          >${productinfoform.description}</textarea><form:errors
+            >${productinfoform.description}</textarea><form:errors
                     path="description" cssClass="valid-error"/></td>
             <td><p id="descriptionerror"></p></td>
         </tr>
@@ -89,12 +90,12 @@
         return !regex.test(string);
     }
 
-    function checkPriceValue(p){
+    function checkPriceValue(p) {
         const regex = /^\d+(.\d{1,2})?$/gm;
         return regex.test(p)
     }
 
-    function findXSSString(string){
+    function findXSSString(string) {
         const regex = /[\<]\w+[\>]/gm;
         return regex.test(string)
     }
@@ -111,14 +112,14 @@
     $("#price").on('keyup change', function (e) {
         let inp = $("#price").val();
         let message = "";
-        if(!checkPriceValue(inp)) message += "Invalid price"
+        if (!checkPriceValue(inp)) message += "Invalid price"
         $("#priceerror").text(message);
     });
 
     $("#description").on('keyup change', function (e) {
         let inp = $("#description").val();
         let message = "";
-        if(findXSSString(inp)) message += "Find XSS"
+        if (findXSSString(inp)) message += "Find XSS"
         $("#descriptionerror").text(message);
     });
 

@@ -43,7 +43,7 @@
 </body>
 <script>
     <c:if test="${param.error == 'true'}">
-        alert("log in error");
+    alert("log in error");
     </c:if>
 </script>
 </html>

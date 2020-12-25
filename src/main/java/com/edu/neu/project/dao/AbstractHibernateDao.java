@@ -24,7 +24,7 @@ public abstract class AbstractHibernateDao<T extends Serializable> {
     }
 
     public T findOne(int id) {
-        return (T) getCurrentSession().get(tClass, id);
+        return getCurrentSession().get(tClass, id);
     }
 
     public List<T> findAll() {

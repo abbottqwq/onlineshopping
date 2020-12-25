@@ -61,7 +61,7 @@
         <tr>
             <td>&nbsp;</td>
             <td><input type="submit" value="Submit" id="submit" disabled/></td>
-<%--            <td><input type="submit" value="Submit" id="submit" /></td>--%>
+                <%--            <td><input type="submit" value="Submit" id="submit" /></td>--%>
         </tr>
     </table>
 </form:form>

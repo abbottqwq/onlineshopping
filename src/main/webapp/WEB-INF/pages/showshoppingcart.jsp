@@ -40,7 +40,9 @@
         </table>
         <input type="submit" value="Update"/>
     </form>
-        <a href="<spring:url value="/customer/checkout"/>"><button>checkout</button></a>
+    <a href="<spring:url value="/customer/checkout"/>">
+        <button>checkout</button>
+    </a>
     </c:if>
 </body>
 <script>
