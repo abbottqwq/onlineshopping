@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="WebSecurityInitializer" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/com/edu/neu/project/config/WebSecurityInitializer.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/edu/neu/project/config/HibernateConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/edu/neu/project/config/ApplicationContextConfig.java</file>
+        </fileset>
+      </configuration>
+    </facet>
+    <facet type="hibernate" name="Hibernate">
+      <configuration>
+        <datasource-map>
+          <unit-entry name="getSessionFactory" />
+          <unit-entry name="hibernate-cfg:hibernate.cfg.xml" value="961a7434-e4db-4f15-8170-20d2097a7018" />
+        </datasource-map>
+        <naming-strategy-map />
+        <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/hibernate-cfg/hibernate.cfg.xml" />
+      </configuration>
+    </facet>
+  </component>
+</module>
